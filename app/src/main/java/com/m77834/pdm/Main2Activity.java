@@ -1,18 +1,34 @@
 package com.m77834.pdm;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
-    final String TAG = "APP";
+    final String TAG = "TAGxyz";
+
+    private TextView tempC;
+
+    public void onClickBtnCalcTemo(View view){
+        Intent intent = new Intent(this, TempActivity.class);
+        String c = tempC.getText().toString();
+        double d = Double.parseDouble(c);
+        Toast.makeText(this, c, Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+        tempC = findViewById(R.id.textView2);
         Log.d(TAG, "onCreate");
     }
 
