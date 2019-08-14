@@ -7,6 +7,7 @@ import android.util.Log;
 public class Main2Activity extends AppCompatActivity {
 
     final String TAG = "APP";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
