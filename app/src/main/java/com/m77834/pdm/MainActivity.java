@@ -1,5 +1,6 @@
 package com.m77834.pdm;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void aula2Click(View view){
-        setContentView(R.layout.activity_main2);
+        Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+        startActivity(intent);
     }
 }
