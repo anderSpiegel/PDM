@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".exercicio1_aula3"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/poupanca_logo"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:text="@string/textPoupança1"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/editExerc11"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="@string/textDigitavelPoupança1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/textPoupança2"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/editExerc12"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="@string/textDigitavelPoupança2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="@string/textPoupança3"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/editExerc13"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/textDigitavelPoupança3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/textPoupança4"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/editExerc14"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/textDigitavelPoupança4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:background="@color/colorCalcularExerc1"
+        android:onClick="onBtnClick"
+        />
+
+    <Button
+        android:id="@+id/btnMuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mudar lingua"
+        android:onClick="mudaLingua"/>
+
+
+</LinearLayout>

@@ -14,13 +14,15 @@ public class Main2Activity extends AppCompatActivity {
     final String TAG = "TAGxyz";
 
     private TextView tempC;
+    private TextView resultado;
 
     public void onClickBtnCalcTemo(View view){
         Intent intent = new Intent(this, TempActivity.class);
         String c = tempC.getText().toString();
         double d = Double.parseDouble(c);
         Toast.makeText(this, c, Toast.LENGTH_SHORT).show();
-        startActivity(intent);
+        resultado.setText(Double.toString(d));
+        //startActivity(intent);
     }
 
 
@@ -29,6 +31,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         tempC = findViewById(R.id.textView2);
+        resultado = findViewById(R.id.textView);
         Log.d(TAG, "onCreate");
     }
 

@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">PDM</string>
+    <string name="app_name" translatable="false">PDM</string>
+    <string name="name">Nome</string>
+    <string name="title_activity_aula3" translatable="false">Aula3</string>
+    <string name="textPoupança1">Valor Inicial:</string>
+    <string name="textPoupança2">Aplicação mensal:</string>
+    <string name="textPoupança3">Tempo de aplicação:</string>
+    <string name="textPoupança4">Taxa:</string>
+    <string name="textDigitavelPoupança1">Valor em R$. Ex: 1700.00</string>
+    <string name="textDigitavelPoupança2">Ex: 100.00</string>
+    <string name="textDigitavelPoupança3">Em meses</string>
+    <string name="textDigitavelPoupança4">Ex: 0.02</string>
 </resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exercicio2_aula3"
+    android:background="@color/preto"
+    >
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/onibus"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/aviao"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bairros"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="122dp"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <TableRow>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cultura"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/feriados"
+        tools:layout_editor_absoluteX="-23dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sac"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="444dp" />
+    </TableRow>
+
+<TableRow>
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/taxi"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/telefone"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/turismo"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="557dp" />
+</TableRow>
+</TableLayout>

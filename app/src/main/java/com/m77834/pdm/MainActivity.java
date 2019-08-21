@@ -19,4 +19,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
         startActivity(intent);
     }
+
+    public void aula3Click(View view){
+        Intent intent = new Intent(getApplicationContext(), aula3.class);
+        startActivity(intent);
+    }
+
 }

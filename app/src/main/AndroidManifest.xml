@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TempActivity"></activity>
+        <activity android:name=".exercicio2_aula3"></activity>
+        <activity android:name=".exercicio1_aula3" />
+        <activity android:name=".aula3" />
+        <activity android:name=".TempActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

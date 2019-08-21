@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".aula3">
+
+    <Button
+        android:id="@+id/exerc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercicio 1"
+        android:layout_gravity="center"
+        android:onClick="exerc1Click"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <Button
+        android:id="@+id/exerc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercicio 2"
+        android:onClick="exerc2Click"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <Button
+        android:id="@+id/exerc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercicio 3"
+        android:onClick="exerc3Click"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/exerc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercicio 4"
+        android:onClick="exerc4Click"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="125dp" />
+</LinearLayout>
