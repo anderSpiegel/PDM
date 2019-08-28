@@ -30,13 +30,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:onClick="aula2Click"
+            android:onClick="aula4Click"
             android:text="AULA 4" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:onClick="aula2Click"
             android:text="AULA 5" />
     </LinearLayout>
 
