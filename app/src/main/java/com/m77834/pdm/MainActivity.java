@@ -3,7 +3,6 @@ package com.m77834.pdm;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,13 +20,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void aula3Click(View view){
-        Intent intent = new Intent(getApplicationContext(), aula3.class);
+        Intent intent = new Intent(getApplicationContext(), Main3Activity.class);
         startActivity(intent);
     }
 
     public void aula4Click(View view){
-        Intent intent = new Intent(getApplicationContext(), aula4.class);
+        //Intent intent = new Intent(getApplicationContext(), aula4.class);
+        //startActivity(intent);
+    }
+
+    public void aula6Click(View view){
+        Intent intent = new Intent(getApplicationContext(), Main6Activity.class);
         startActivity(intent);
     }
+
 
 }

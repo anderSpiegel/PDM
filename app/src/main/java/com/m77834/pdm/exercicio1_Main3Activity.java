@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 import java.util.Locale;
 
-public class exercicio1_aula3 extends AppCompatActivity {
+public class exercicio1_Main3Activity extends AppCompatActivity {
 
     private TextView text1;
     private TextView text2;

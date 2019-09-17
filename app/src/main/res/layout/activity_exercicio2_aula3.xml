@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".exercicio2_aula3"
+    tools:context=".exercicio2_Main3Activity"
     android:background="@color/preto"
     >
 

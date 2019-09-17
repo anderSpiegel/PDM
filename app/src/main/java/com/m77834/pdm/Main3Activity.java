@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import  android.view.View;
 
-public class aula3 extends AppCompatActivity {
+public class Main3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,12 +14,12 @@ public class aula3 extends AppCompatActivity {
     }
 
     public void exerc1Click(View view){
-        Intent intent = new Intent(this, exercicio1_aula3.class);
+        Intent intent = new Intent(this, exercicio1_Main3Activity.class);
         startActivity(intent);
     }
 
     public void exerc2Click(View view){
-        Intent intent = new Intent(this, exercicio2_aula3.class);
+        Intent intent = new Intent(this, exercicio2_Main3Activity.class);
         startActivity(intent);
     }
 
