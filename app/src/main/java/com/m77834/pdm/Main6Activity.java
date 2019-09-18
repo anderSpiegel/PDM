@@ -1,7 +1,15 @@
 package com.m77834.pdm;
 
+import android.content.ContentResolver;
+import android.content.ContentUris;
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.LayoutRes;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +23,12 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import model.ContactModel;
+
 public class Main6Activity extends AppCompatActivity {
 
     private ListView meuListView;
@@ -23,8 +37,10 @@ public class Main6Activity extends AppCompatActivity {
     String[] values = {"Luz", "Água", "Telefone", "Internet", "Aluguel", "Petshop"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
+
 
         meuSpinner = findViewById(R.id.meu_spinner);
         meuListView = findViewById(R.id.meu_list_view);
@@ -56,4 +72,7 @@ public class Main6Activity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), exercicio1_Main6Activity.class);
         startActivity(intent);
     }
+
+
+
 }
