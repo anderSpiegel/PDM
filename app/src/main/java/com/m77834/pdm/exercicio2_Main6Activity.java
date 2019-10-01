@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class exercicio2_Main6Activity extends AppCompatActivity {
 
     TextView textView;
@@ -43,7 +44,18 @@ public class exercicio2_Main6Activity extends AppCompatActivity {
                     case "RS":
                         String[] cidades = {"SCS", "POA", "Gramado"};
                         meuListView =  findViewById(R.id.cidadeSelector);
-                        ArrayAdapter<String> arrayList = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, cidades);
+                        ArrayAdapter<String> arrayList = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades);
+                        meuListView.setAdapter(arrayList);
+                    case "SP":
+                        String[] cidades1 = {"SP","SANTOS","OSASCO"};
+                        meuListView =  findViewById(R.id.cidadeSelector);
+                        ArrayAdapter<String> arrayList1 = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades1);
+                        meuListView.setAdapter(arrayList1);
+                    case "RJ":
+                        String[] cidades2 = {"RJ","DUQUE DE CAXIAS","???"};
+                        meuListView =  findViewById(R.id.cidadeSelector);
+                        ArrayAdapter<String> arrayList2 = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades2);
+                        meuListView.setAdapter(arrayList2);
                 }
             }
 
