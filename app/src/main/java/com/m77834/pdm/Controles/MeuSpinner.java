@@ -23,16 +23,6 @@ public class MeuSpinner extends ArrayAdapter {
         TextView tv1 = v.findViewById(R.id.text1);
         TextView tv2 = v.findViewById(R.id.text2);
 
-        if(position % 2 == 0){
-            tv1.setTextColor(Color.YELLOW);
-            tv1.setTextColor(Color.MAGENTA);
-            v.setBackground(Color.GREEN);
-        }
-        else{
-            tv1.setTextColor(Color.RED);
-            tv1.setTextColor(Color.BLUE);
-            v.setBackground(Color.GREEN);
-        }
 
         return v;
     }

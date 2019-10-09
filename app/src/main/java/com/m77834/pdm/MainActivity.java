@@ -34,5 +34,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void Revisao(View view){
+        Intent intent = new Intent(getApplicationContext(), MainActivityRevisao.class);
+        startActivity(intent);
+    }
+
 
 }

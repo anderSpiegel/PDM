@@ -21,7 +21,6 @@
     android:id="@android:id/text1"
     android:textSize="28sp"
     android:textColor="#0000FF"
-    android:background="#FF0000"
     android:singleLine="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

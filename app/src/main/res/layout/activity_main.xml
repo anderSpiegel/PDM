@@ -46,4 +46,11 @@
             android:text="Aula 6" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="Revisao"/>
+
 </LinearLayout>
