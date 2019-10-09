@@ -3,7 +3,10 @@ package com.m77834.pdm;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.Image;
+import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.widget.ListViewAutoScrollHelper;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
@@ -22,10 +26,13 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.io.File;
 import java.net.URI;
 import java.security.interfaces.RSAKey;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -35,6 +42,7 @@ import model.matriculaModel;
 
 public class MainActivityRevisao extends AppCompatActivity {
 
+    private final int requestCode = 20;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     Button tiraFoto;
     EditText matriculaView;
@@ -44,7 +52,7 @@ public class MainActivityRevisao extends AppCompatActivity {
     Spinner estadoSelector_;
     ImageView foto_;
     ListView lista;
-
+    Uri file;
     List<matriculaModel> listaMatricula = new ArrayList<>();
 
 
@@ -65,6 +73,15 @@ public class MainActivityRevisao extends AppCompatActivity {
         estadoSelector_ = findViewById(R.id.estadoSelector_);
         foto_ = findViewById(R.id.imagem);
         tiraFoto = findViewById(R.id.tiraFoto);
+
+        tiraFoto.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent photoCaptureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(photoCaptureIntent, requestCode);
+            }
+        });
+
         cidadeSelector_ =  findViewById(R.id.cidadeSelector_);
         lista = findViewById(R.id.minhaLista);
 
@@ -100,25 +117,15 @@ public class MainActivityRevisao extends AppCompatActivity {
 
     }
 
-
-
-    public void tiraFoto(View view){
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        }
-        onActivityResult(1, 1, takePictureIntent);
-    }
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            foto_.setImageBitmap(imageBitmap);
+        super.onActivityResult(requestCode, resultCode, data);
+        if(this.requestCode == requestCode && resultCode == RESULT_OK){
+            Bitmap bitmap = (Bitmap)data.getExtras().get("data");
+            foto_.setImageBitmap(bitmap);
         }
     }
+
 
     public void addMatricula(View view){
         String matriculaString = matriculaView.getText().toString();
@@ -135,12 +142,17 @@ public class MainActivityRevisao extends AppCompatActivity {
 
         String cidadeString = estadoSelecionado.toString();
 
+        Bitmap image=((BitmapDrawable)foto_.getDrawable()).getBitmap();
 
-        matriculaModel model = new matriculaModel(matriculaString, nomeString, emailString, estadoString, cidadeString);
+        matriculaModel model = new matriculaModel(matriculaString, nomeString, emailString, estadoString, cidadeString, image);
 
         listaMatricula.add(model);
 
-        MatriculaListActivity newl = new MatriculaListActivity();
+        matriculaView.setText("");
+        nomeView.setText("");
+        emailView.setText("");
+        foto_.setImageBitmap(null);
+
 
 
 
@@ -177,6 +189,8 @@ public class MainActivityRevisao extends AppCompatActivity {
             itens.put("nome", m.nome);
 dados.add(itens);
         }
+
+
         return  dados;
     }
 
