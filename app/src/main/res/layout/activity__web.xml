@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Web"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Retorna dados"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/TemperaturaMediaLabel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Temperatura media:"/>
+
+        <TextView
+            android:id="@+id/TemperaturaMedia"
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/UmidadeMediaLabel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Umidade media:"/>
+
+        <TextView
+            android:id="@+id/UmidadeMedia"
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/OrvalhoMediaLabel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Ponto de orvalho medio:"/>
+
+        <TextView
+            android:id="@+id/OrvalhoMedia"
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/PressaoMediaLabel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Pressao media:"/>
+
+        <TextView
+            android:id="@+id/PressaoMedia"
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+
+</LinearLayout>

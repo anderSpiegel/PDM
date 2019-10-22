@@ -59,4 +59,11 @@
         android:text="Desafio"
         android:onClick="desafio"/>
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aula Web Service"
+        android:onClick="web"/>
+
 </LinearLayout>
