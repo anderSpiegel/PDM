@@ -3,39 +3,40 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-       <LinearLayout
-           android:layout_width="150dp"
-           android:layout_height="match_parent"
-           android:layout_gravity="left">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left">
 
-           <ImageView
-               android:id="@+id/imagemMatricula"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_gravity="center"/>
-       </LinearLayout>
+            <ImageView
+                android:id="@+id/imagemMatricula"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:layout_gravity="right"
-           android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:orientation="vertical">
 
-           <TextView
-               android:id="@+id/matriculaMatricula"
-               android:layout_width="match_parent"
-               android:layout_height="360dp" />
-           <TextView
-               android:id="@+id/nomeMatricula"
-               android:layout_width="match_parent"
-               android:layout_height="360dp" />
-       </LinearLayout>
+            <TextView
+                android:id="@+id/matriculaMatricula"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
 
-   </LinearLayout>
+            <TextView
+                android:id="@+id/nomeMatricula"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

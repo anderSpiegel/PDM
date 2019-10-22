@@ -20,6 +20,9 @@ public class exercicio2_Main6Activity extends AppCompatActivity {
 
     String[] estados = {"RS", "SP", "RJ"};
 
+    String[] cidades = {"SCS", "POA", "Gramado"};
+    String[] cidades1 = {"SP","SANTOS","OSASCO"};
+    String[] cidades2 = {"RJ","DUQUE DE CAXIAS","???"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,20 +43,15 @@ public class exercicio2_Main6Activity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String selected = adapterView.getSelectedItem().toString();
+                meuListView =  findViewById(R.id.cidadeSelector);
                 switch (selected){
                     case "RS":
-                        String[] cidades = {"SCS", "POA", "Gramado"};
-                        meuListView =  findViewById(R.id.cidadeSelector);
                         ArrayAdapter<String> arrayList = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades);
                         meuListView.setAdapter(arrayList);
                     case "SP":
-                        String[] cidades1 = {"SP","SANTOS","OSASCO"};
-                        meuListView =  findViewById(R.id.cidadeSelector);
                         ArrayAdapter<String> arrayList1 = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades1);
                         meuListView.setAdapter(arrayList1);
                     case "RJ":
-                        String[] cidades2 = {"RJ","DUQUE DE CAXIAS","???"};
-                        meuListView =  findViewById(R.id.cidadeSelector);
                         ArrayAdapter<String> arrayList2 = new ArrayAdapter<String>(exercicio2_Main6Activity.this, android.R.layout.simple_list_item_1, cidades2);
                         meuListView.setAdapter(arrayList2);
                 }

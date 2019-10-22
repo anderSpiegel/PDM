@@ -116,7 +116,6 @@ public class Activity_Desafio extends AppCompatActivity {
                 nova_operacao.data_operacao = Calendar.getInstance().getTime();
 
 
-                Log.d("Tag", nova_operacao.resultado);
                 listaOperacoes.add(nova_operacao);
 
 

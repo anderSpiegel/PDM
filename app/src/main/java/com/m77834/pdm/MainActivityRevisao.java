@@ -24,6 +24,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.m77834.pdm.Controles.MeuAdapterRevisao;
+
 import org.w3c.dom.Text;
 
 import java.io.File;
@@ -153,49 +155,11 @@ public class MainActivityRevisao extends AppCompatActivity {
         emailView.setText("");
         foto_.setImageBitmap(null);
 
-
+        MeuAdapterRevisao customAdapter = new MeuAdapterRevisao(MainActivityRevisao.this, R.layout.lista_desafio, listaMatricula);
+        lista.setAdapter(customAdapter);
 
 
     }
-
-    public class MatriculaListActivity extends ListActivity implements AdapterView.OnItemClickListener{
-        String[] de = {"imagem", "matricula", "nome"};
-        int[] para = {R.id.imagemMatricula, R.id.matriculaMatricula, R.id.nomeMatricula};
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState){
-            super.onCreate(savedInstanceState);
-
-            SimpleAdapter adapter = new SimpleAdapter(this, dadosMatricula(listaMatricula), R.layout.layoutrevisao, de, para);
-            setListAdapter(adapter);
-        }
-
-        @Override
-        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-        }
-    }
-
-    private List<HashMap<String, Object>> dadosMatricula(List<matriculaModel> lista){
-
-
-        List<HashMap<String, Object>> dados = new ArrayList<>();
-        HashMap<String, Object> itens;
-        for(int i = 0; i < lista.size(); i++){
-            itens = new HashMap<String, Object>();
-            itens.put("imagem", null);
-            matriculaModel m = lista.get(i);
-            itens.put("matricula", m.matricula);
-            itens.put("nome", m.nome);
-dados.add(itens);
-        }
-
-
-        return  dados;
-    }
-
-
-
 }
 
 
