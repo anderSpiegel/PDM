@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Web"></activity>
+        <activity android:name=".NewLoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".DB_Activity" />
+        <activity android:name=".Activity_Web" />
         <activity android:name=".Activity_Desafio" />
         <activity android:name=".MainActivityRevisao" />
         <activity android:name=".Main7Activity" />

@@ -66,4 +66,11 @@
         android:text="Aula Web Service"
         android:onClick="web"/>
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aula db"
+        android:onClick="login"/>
+
 </LinearLayout>
